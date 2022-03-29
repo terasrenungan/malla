@@ -46,9 +46,9 @@ while True:
     clr()
     banner()
     print(lg+'[1] Tambah akun baru'+n)
-    print(lg+'[2] Filter all banned accounts'+n)
-    print(lg+'[3] Delete specific accounts'+n)
-    print(lg+'[4] Update your Deatechsoft'+n)
+    print(lg+'[2] Filter Akun yang di Banned'+n)
+    print(lg+'[3] Hapus Akun Telegram'+n)
+    print(lg+'[4] Update Aplikasi Malla'+n)
     print(lg+'[5] Keluar'+n)
     a = int(input('\nEnter your choice: '))
     if a == 1:
@@ -143,7 +143,7 @@ while True:
         # thanks to github.com/th3unkn0n for the snippet below
         print(f'\n{lg}[i] Checking for updates...')
         try:
-            # https://raw.githubusercontent.com/terasrenungan/deatechsoft/main/version.txt
+            # https://raw.githubusercontent.com/malla/deatechsoft/main/version.txt
             version = requests.get('https://raw.githubusercontent.com/terasrenungan/deatechsoft/main/version.txt')
         except:
             print(f'{r} You are not connected to the internet')
@@ -160,10 +160,10 @@ while True:
                     os.system('rm add.py')
                     os.system('rm manager.py')
                 #os.system('del scraper.py')
-                os.system('curl -l -O https://raw.githubusercontent.com/terasrenungan/deatechsoft/main/add.py')
-                os.system('curl -l -O https://raw.githubusercontent.com/terasrenungan/deatechsoft/main/manager.py')
+                os.system('curl -l -O https://raw.githubusercontent.com/terasrenungan/malla/main/add.py')
+                os.system('curl -l -O https://raw.githubusercontent.com/terasrenungan/malla/main/manager.py')
                 print(f'{lg}[*] Updated to version: {version.text}')
-                input('Press enter to exit...')
+                input('Tekan Enter untuk Keluar...')
                 exit()
             else:
                 print(f'{lg}[!] Update aborted.')
