@@ -108,7 +108,7 @@ def log_status(scraped, index):
     
 
 def exit_window():
-    input(f'\n{cy} Press enter to exit...')
+    input(f'\n{cy} Tekan Enter Untuk Keluar...')
     clr()
     banner()
     sys.exit()
